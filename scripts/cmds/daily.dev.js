@@ -50,7 +50,7 @@ module.exports = {
 			friday: "Friday",
 			saturday: "Saturday",
 			sunday: "Sunday",
-			alreadyReceived: "You have already received the gift",
+			alreadyReceived: "𝑻𝒖 𝒂𝒔 𝒓𝒆𝒄̧𝒖 𝒕𝒐𝒏 𝒑𝒂𝒊𝒆𝒎𝒆𝒏𝒕💸 𝒎𝒂𝒊𝒏𝒕𝒆𝒏𝒂𝒏𝒕 𝒎𝒐𝒏𝒕𝒓𝒆-𝒎𝒐𝒊 𝒄𝒆 𝒒𝒖𝒆 𝒕𝒖 𝒗𝒂𝒖𝒙",
 			received: "You have received %1 coin and %2 exp"
 		}
 	},
@@ -93,4 +93,4 @@ module.exports = {
 		});
 		message.reply(getLang("received", getCoin, getExp));
 	}
-};
+}
