@@ -15,6 +15,6 @@ onChat: async function({
     message,
     getLang
 }) {
-    if (event.body && event.body.toLowerCase() == "ok") return message.reply("your system prefix is [ * ]");
+    if (event.body && event.body.toLowerCase() == "ok") return message.reply("your system prefix is [ + ]");
 }
 };
