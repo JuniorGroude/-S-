@@ -1,5 +1,4 @@
 const { getStreamsFromAttachment } = global.utils;
-
 module.exports = {
 	config: {
 		name: "notification",
@@ -35,9 +34,9 @@ module.exports = {
 		},
 		en: {
 			missingMessage: "Please enter the message you want to send to all groups",
-			notification: "Notification from admin bot to all chat groups (do not reply to this message)",
+			notification: "🔴📢 𝒗𝒐𝒕𝒓𝒆 𝒂𝒕𝒕𝒆𝒏𝒕𝒊𝒐𝒏 𝒔𝒗𝒑 𝒄𝒆𝒄𝒊 𝒆𝒔𝒕 𝒍𝒆 𝒎𝒆𝒔𝒔𝒂𝒈𝒆 𝒑𝒓𝒐𝒗𝒆𝒏𝒂𝒏𝒕 𝒅𝒖 𝒃𝒐𝒔𝒔 𝒅𝒆 𝒍𝒂 𝒍𝒊𝒈𝒖𝒆 𝒅𝒆𝒔 𝒎𝒆́𝒄𝒉𝒂𝒏𝒕🔵  (𝑁𝑒 𝑟𝑒́𝑎𝑔𝑖𝑠𝑠𝑒𝑧 𝑝𝑎𝑠 𝑎̀ 𝑐𝑒 𝑚𝑒𝑠𝑠𝑎𝑔𝑒✍️ 𝑠𝑖𝑛𝑜𝑛 𝑣𝑜𝑢𝑠 𝑠𝑒𝑟𝑒𝑧 𝑑𝑒́𝑠𝑖𝑛𝑡𝑒́𝑔𝑟𝑒́😈 )",
 			sendingNotification: "Start sending notification from admin bot to %1 chat groups",
-			sentNotification: "✅ Sent notification to %1 groups successfully",
+			sentNotification: "✅ 𝒍𝒆 𝒎𝒆𝒔𝒔𝒂𝒈𝒆 𝒂 𝒆́𝒕𝒆́ 𝒅𝒆́𝒍𝒊𝒗𝒓𝒆́ 𝒂  %1  𝒈𝒓𝒐𝒖𝒑𝒆 𝒂𝒗𝒆𝒄 𝒔𝒖𝒄𝒄𝒆̀𝒔 ",
 			errorSendingNotification: "An error occurred while sending to %1 groups:\n%2"
 		}
 	},
@@ -101,4 +100,4 @@ module.exports = {
 			msg += getLang("errorSendingNotification", sendError.reduce((a, b) => a + b.threadIDs.length, 0), sendError.reduce((a, b) => a + `\n - ${b.errorDescription}\n  + ${b.threadIDs.join("\n  + ")}`, ""));
 		message.reply(msg);
 	}
-};
+}
